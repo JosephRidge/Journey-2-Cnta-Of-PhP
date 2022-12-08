@@ -150,3 +150,7 @@ foreach($the_revers as $key => $f){
 foreach($fruits as $fruit){
     echo "<h2>${fruit} </h2>";
 };
+
+print_r($_SERVER) ;
+
+?>
