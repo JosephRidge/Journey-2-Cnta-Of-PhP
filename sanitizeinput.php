@@ -5,6 +5,8 @@
 //downside of using $_GET => it displays every input on the url henc it is safer to use post because of security reasons
 // to sanitize your input first assign the input to a variable then afterwards use filter_input method to sanitize them 
 // this helps prevents attack such as XSS and SQL Inection
+
+ 
 if(isset($_POST['submit'])){
     $name = filter_input(INPUT_POST,'name', FILTER_SANITIZE_SPECIAL_CHARS); 
     $age = filter_input(INPUT_POST,'age', FILTER_SANITIZE_SPECIAL_CHARS);
